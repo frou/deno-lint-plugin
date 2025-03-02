@@ -1,6 +1,6 @@
-This repository contains a plugin to provide additional rules for [`Deno lint`](https://docs.deno.com/runtime/fundamentals/configuration/#linting).
+This repository contains a plugin to provide additional rules for [`Deno's linter`](https://docs.deno.com/runtime/fundamentals/configuration/#linting).
 
-Use it by adding to the `"lint"` section in the `deno.json` or `deno.jsonc` config file in your own project.
+To use it, add it to the `"lint"` section in your own project's `deno.json` or `deno.jsonc` configuration file:
 
 ```json
 {
@@ -14,16 +14,16 @@ Use it by adding to the `"lint"` section in the `deno.json` or `deno.jsonc` conf
 
 ## no-useless-undefined-initializer
 
-`let` declarations are initialized to `undefined` by default; there's no need to provide `undefined` as an initializer.[^1][^2]
+`let` declarations are initialized to `undefined` by default; there's no need to provide `undefined` as an initializer.[^1]&nbsp;[^2]
 
 ```ts
 // Bad
-let x = undefined
-let y: string | undefined = undefined
+let x = undefined;
+let y: string | undefined = undefined;
 
 // Good
-let x
-let y: string | undefined
+let x;
+let y: string | undefined;
 ```
 
 This rule also offers an automated quick-fix via LSP:

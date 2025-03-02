@@ -35,6 +35,7 @@ const plugin: Deno.lint.Plugin = {
   },
 }
 
+/** A plugin to provide additional rules for Deno's linter */
 export default plugin
 
 /* References
