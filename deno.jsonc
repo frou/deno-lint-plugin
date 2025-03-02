@@ -1,8 +1,10 @@
 {
   "name": "@duncan/lint",
-  "version": "0.0.2",
   "exports": "./plugin.ts",
+
+  "version": "0.0.3",
   "license": "MIT",
+
   "publish": {
     "exclude": ["*.png"]
   }

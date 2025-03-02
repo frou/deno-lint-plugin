@@ -42,6 +42,7 @@ export default plugin
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#valuen
 - https://tc39.es/ecma262/#sec-declarations-and-the-variable-statement
+- (VariableDeclarator.definite) https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-7.html#definite-assignment-assertions
 
 - https://docs.deno.com/runtime/fundamentals/configuration/#linting
     - https://docs.deno.com/runtime/reference/lint_plugins/

@@ -1,4 +1,4 @@
-This repository contains a plugin to provide additional rules for [`Deno's linter`](https://docs.deno.com/runtime/fundamentals/configuration/#linting).
+This repository contains a plugin to provide additional rules for [Deno's linter](https://docs.deno.com/runtime/fundamentals/configuration/#linting).
 
 To use it, add it to the `"lint"` section in your own project's `deno.json` or `deno.jsonc` configuration file:
 
