@@ -14,7 +14,9 @@ To use it, add it to the `"lint"` section in your own project's `deno.json` or `
 
 ## no-useless-undefined-initializer
 
-`let` declarations are initialized to `undefined` by default; there's no need to provide `undefined` as an initializer.[^1]&nbsp;[^2]
+Because `let` declarations are initialized to `undefined` by default, it's unnecessary to provide `undefined` as an initializer.[^1]&nbsp;[^2]
+
+This rule warns about such initializers, e.g.
 
 ```ts
 // Bad
@@ -26,7 +28,7 @@ let x;
 let y: string | undefined;
 ```
 
-This rule also offers an automated quick-fix via LSP:
+...and an automated Quick-Fix is offered via LSP:
 
 ![Screenshot](https://raw.githubusercontent.com/frou/deno-lint-plugin/master/lsp-nuui.png)
 

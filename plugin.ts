@@ -13,7 +13,7 @@ const noUselessUndefinedInitializer: Deno.lint.Rule = {
             node: decl,
 
             message: "`let` declarations are initialized to `" + needle +
-              "` by default; there's no need to provide `" + needle + "` as an initializer",
+              "` by default; it's unnecessary to provide `" + needle + "` as an initializer",
 
             fix(fixer) {
               // Remove the initializer and the ` = ` syntax that precedes it.
