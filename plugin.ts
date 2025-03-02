@@ -28,6 +28,7 @@ const noUselessUndefinedInitializer: Deno.lint.Rule = {
   },
 }
 
+/** A plugin to provide additional rules for Deno's linter */
 const plugin: Deno.lint.Plugin = {
   name: "duncan-lint",
   rules: {
@@ -35,7 +36,6 @@ const plugin: Deno.lint.Plugin = {
   },
 }
 
-/** A plugin to provide additional rules for Deno's linter */
 export default plugin
 
 /* References
