@@ -28,12 +28,14 @@ const noUselessUndefinedInitializer: Deno.lint.Rule = {
   },
 }
 
-export default {
+const plugin: Deno.lint.Plugin = {
   name: "duncan-lint",
   rules: {
     "no-useless-undefined-initializer": noUselessUndefinedInitializer,
   },
-} satisfies Deno.lint.Plugin
+}
+
+export default plugin
 
 /* References
 

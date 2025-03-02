@@ -1,0 +1,8 @@
+{
+  "name": "@duncan/lint",
+  "version": "0.0.0",
+  "exports": "./plugin.ts",
+  "publish": {
+    "exclude": ["*.png"]
+  }
+}
